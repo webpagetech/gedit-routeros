@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language id="routeros" _name="RouterOSv6" version="2.0" _section="Mikrotik">
+<!--
+		webpagetech.com
+
+		The latest version can be found at  
+		webpagetech.com/index.php/tutorials/mikrotik-tutorials/40-mikrotik-gedit
+
+		Bug reports:
+		support@webpagetech.com
+		
+
+		This file is free software; you can redistribute it and/or
+		modify it under the terms of the GNU Lesser General Public
+		License as published by the Free Software Foundation; either
+		version 2 of the License, or (at your option) any later version.
+
+		This file is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+		Lesser General Public License for more details.
+
+		You should have received a copy of the GNU Lesser General Public
+		License along with this library; if not, write to the Free Software
+		Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+--> 
+<!--
+to do's
+Spell check comments
+-get the var after initialization and setting to go green
+-get the log peramiters to go purple
+-get math symbols to go gold
+-get " stings to go aqua with "$" colored gold and "vars" green inside with gold " serounding
+-check that all the data types are acualy what thay are specified in the mikrotik manuals
+-get the map-to types to match the data types for both mikrotik and gtk xml files and make them corispond with the mikrotik colores in xml 
+-get all the menus and atributes regexed out! :-)...  i think keyword blocks can use regex?
+-do somthing about specal var tyes like ip adresses/ slash notation, times, ext. 
+-black background with print fintion to change white text to black and black background to white or(-no white text)? or?
+-->
+	<metadata>
+		<property name="mimetypes">text/plain</property>
+		<property name="globs">*.rsc</property>
+	</metadata>
+	<!-- For RouterOS v6 SSH/Telnet Colored Text Use the style .../gtksourceview-3.0/styles/routerosv6.xml That was with this file at webpagetech.com/index.php/tutorials/mikrotik-tutorials/40-mikrotik-gedit -->
+	<styles>
+		<style id="comment"		_name="Comment"			map-to="def:comment"/>
+		<style id="rosaqua"		_name="rosaqua"			map-to="def:rosaqua"/>
+		<style id="rosgreen"		_name="rosgreen"			map-to="def:rosgreen"/>
+		<style id="rosdarkgreen"	_name="rosdarkgreen"		map-to="def:rosdarkgreen"/>
+		<style id="rospurple"		_name="rospurple"			map-to="def:rospurple"/>
+		<style id="rosgold"		_name="rosgold"			map-to="def:rosgold"/>
+	</styles>
+	<definitions>
+		<context id="routeros">
+			<include>
+				<context ref="vars"/>
+				<context ref="varTypes"/>
+				<!--<context ref="initalizingVars"/>-->
+				<context ref="match-log"/>
+				<!-- <context ref="log-perams"/> -->
+				<context ref="notation"/>
+				<context ref="syntax"/>
+				<context ref="common"/>
+				<context ref="global"/>
+				<context ref="loop-builtins"/>
+				<context ref="loop-result"/>
+				<context ref="ros-string"/>
+				<context ref="cmd-strings"/>
+			</include>
+		</context>
+		<!--	Variables -->
+		<context id="vars" style-ref="rosgreen">
+			<match>[$]+[a-zA-Z_][a-zA-Z0-9_]*</match>
+		</context>
+		<!--	Variable Types -->
+		<context id="varTypes" style-ref="rospurple">
+			<prefix>:</prefix>
+			<suffix>\ </suffix>
+			<keyword>local</keyword>
+			<keyword>global</keyword>
+		</context>
+<!--
+		<context id="initalizingVars" style-ref="rosgreen">
+			<match>:local\s\w*</match>
+		</context>
+-->
+		<context id="match-log" style-ref="rosaqua">
+			<prefix>:</prefix>
+			<suffix>\ </suffix>
+			<keyword>log</keyword>
+		</context>
+		<!--	Variable Peramiters -->
+<!--
+not working
+		
+		<context id="log-perams" style-ref="rospurple">
+			<prefix>:log\s</prefix>
+			<keyword>debug</keyword>
+			<keyword>error</keyword>
+			<keyword>find</keyword>
+			<keyword>info</keyword>
+			<keyword>print</keyword>
+			<keyword>warning</keyword>
+		</context>
+-->
+		<!-- comments-->
+		<context id="notation" style-ref="comment">
+			<match>^#.*</match>
+		</context>
+		<!--	Print Commands --> 
+		<context id="syntax" style-ref="rosdarkgreen">
+			<keyword>append</keyword>
+			<keyword>as-value</keyword>
+			<keyword>brief</keyword>
+			<keyword>detail</keyword>
+			<keyword>count-only</keyword>
+			<keyword>file</keyword>
+			<keyword>follow</keyword>
+			<keyword>follow-only</keyword>
+			<keyword>from</keyword>
+			<keyword>interval</keyword>
+			<keyword>terse</keyword>
+			<keyword>value-list</keyword>
+			<keyword>without-paging</keyword>
+			<keyword>where</keyword>
+		</context>
+		<!--	Common Commands -->
+		<context id="common" style-ref="rospurple">
+			<suffix>\ </suffix>
+			<keyword>add</keyword>
+			<keyword>remove</keyword>
+			<keyword>enable</keyword>
+			<keyword>disable</keyword>
+			<keyword>set</keyword>
+			<keyword>get</keyword>
+			<keyword>print</keyword>
+			<keyword>export</keyword>
+			<keyword>edit</keyword>
+			<keyword>find</keyword>
+			<keyword>monitor</keyword>
+			<keyword>reset-counters</keyword>
+			<keyword>reset-mac-address</keyword>
+			<keyword>cable-test</keyword>
+		</context>
+		<!--	Global Commands -->
+		<context id="global" style-ref="rospurple">
+			<prefix>:</prefix>
+			<keyword>beep</keyword>
+			<keyword>delay</keyword>
+			<keyword>put</keyword>
+			<keyword>len</keyword>
+			<keyword>typeof</keyword>
+			<keyword>pick</keyword>
+			<keyword>time</keyword>
+			<keyword>set</keyword>
+			<keyword>find</keyword>
+			<keyword>enviroment</keyword>
+			<keyword>terminal</keyword>
+			<keyword>error</keyword>
+			<keyword>parse</keyword>
+			<keyword>resolve</keyword>
+			<keyword>toarray</keyword>
+			<keyword>tobool</keyword>
+			<keyword>toid</keyword>
+			<keyword>toip</keyword>
+			<keyword>toip6</keyword>
+			<keyword>tonum</keyword>
+			<keyword>tostr</keyword>
+			<keyword>totime</keyword>
+			<keyword>return</keyword>
+		</context>
+		<!--	Function statements -->
+		<context id="loop-builtins" style-ref="rospurple">
+			<prefix>:</prefix>
+			<keyword>while</keyword>
+			<keyword>for</keyword>
+			<keyword>foreach</keyword>
+			<keyword>if</keyword>
+		</context>
+		<context id="loop-result" style-ref="rospurple">
+			<suffix>\=</suffix>
+			<keyword>do</keyword>
+			<keyword>else</keyword>
+			<keyword>in</keyword>
+		</context>
+		<!-- Strings -->
+		<context id="ros-string" style-ref="rosaqua" class="string" class-disabled="no-spell-check">
+			<start>["']</start>
+			<end>\%{0@start}</end>
+			<include>
+				<context ref="vars"/>
+			</include>
+		</context>
+		<!--	Command Strings v6.2 -->
+		<context id="cmd-strings" style-ref="rosaqua">
+			<prefix>/?</prefix>
+			<keyword>interface\ bridge</keyword>
+			<keyword>interface\ ethernet</keyword>
+			<keyword>ip\ arp</keyword>
+			<keyword>ip\ neighbor\ discovery</keyword>
+			<keyword>interface\ ethernet\ switch</keyword>
+			<keyword>interface\ wireless\ security-profiles</keyword>
+			<keyword>interface\ wireless</keyword>
+			<keyword>ip\ neighbor\ discovery</keyword>
+			<keyword>interface\ wireless\ manual-tx-power-table</keyword>
+			<keyword>interface\ wireless\ nstreme</keyword>
+			<keyword>ip\ dhcp-client\ option</keyword>
+			<keyword>ip\ firewall\ layer7-protocol</keyword>
+			<keyword>ip\ hotspot\ profile</keyword>
+			<keyword>ip\ hotspot\ user\ profile</keyword>
+			<keyword>ip\ ipsec\ mode-cfg</keyword>
+			<keyword>ip\ ipsec\ policy\ group</keyword>
+			<keyword>ip\ ipsec\ proposal</keyword>
+			<keyword>ip\ pool</keyword>
+			<keyword>ip\ dhcp-server</keyword>
+			<keyword>ip\ dhcp-client</keyword>
+			<keyword>ipv6\ dhcp-server</keyword>
+			<keyword>ipv6\ pool</keyword>
+			<keyword>port</keyword>
+			<keyword>ppp\ profile</keyword>
+			<keyword>interface\ pptp-client</keyword>
+			<keyword>queue\ type</keyword>
+			<keyword>queue\ simple</keyword>
+			<keyword>queue\ tree</keyword>
+			<keyword>routing\ bgp\ instance</keyword>
+			<keyword>routing\ ospf\ instance</keyword>
+			<keyword>routing\ ospf\ area</keyword>
+			<keyword>routing\ ospf-v3\ instance</keyword>
+			<keyword>routing\ ospf-v3\ area</keyword>
+			<keyword>snmp\ community</keyword>
+			<keyword>system\ logging\ action</keyword>
+			<keyword>user\ group</keyword>
+			<keyword>interface\ bridge\ filter</keyword>
+			<keyword>interface\ bridge\ port</keyword>
+			<keyword>interface\ bridge\ settings</keyword>
+			<keyword>interface\ ethernet\ switch\ port</keyword>
+			<keyword>interface\ l2tp-server\ server</keyword>
+			<keyword>interface\ ovpn-server\ server</keyword>
+			<keyword>interface\ pptp-server\ server</keyword>
+			<keyword>interface\ sstp-server\ server</keyword>
+			<keyword>interface\ wireless\ align</keyword>
+			<keyword>interface\ wireless\ sniffer</keyword>
+			<keyword>interface\ wireless\ snooper</keyword>
+			<keyword>ip\ accounting</keyword>
+			<keyword>ip\ accounting\ web-access</keyword>
+			<keyword>ip\ address</keyword>
+			<keyword>ip\ dhcp-server\ config</keyword>
+			<keyword>ip\ dhcp-server\ lease</keyword>
+			<keyword>ip\ dhcp-server\ network</keyword>
+			<keyword>ip\ dns</keyword>
+			<keyword>ip\ dns\ static</keyword>
+			<keyword>ip\ firewall\ address-list</keyword>
+			<keyword>ip\ firewall\ connection\ tracking</keyword>
+			<keyword>ip\ neighbor\ discovery\ settings</keyword>
+			<keyword>ip\ settings</keyword>
+			<keyword>ipv6\ settings</keyword>
+			<keyword>ip\ firewall\ filter</keyword>
+			<keyword>ip\ firewall\ mangle</keyword>
+			<keyword>ip\ firewall\ nat</keyword>
+			<keyword>ip\ firewall\ service-port</keyword>
+			<keyword>ip\ hotspot\ service-port</keyword>
+			<keyword>ip\ proxy</keyword>
+			<keyword>ip\ route</keyword>
+			<keyword>ip\ service</keyword>
+			<keyword>ip\ smb</keyword>
+			<keyword>ip\ smb\ shares</keyword>
+			<keyword>ip\ smb\ users</keyword>
+			<keyword>ip\ socks</keyword>
+			<keyword>ip\ traffic-flow</keyword>
+			<keyword>ip\ upnp</keyword>
+			<keyword>ip\ upnp\ interfaces</keyword>
+			<keyword>ipv6\ address</keyword>
+			<keyword>ipv6\ firewall\ address-list</keyword>
+			<keyword>ipv6\ firewall\ filter</keyword>
+			<keyword>ipv6\ nd</keyword>
+			<keyword>ipv6\ nd\ prefix\ default</keyword>
+			<keyword>mpls</keyword>
+			<keyword>mpls\ interface</keyword>
+			<keyword>mpls\ ldp</keyword>
+			<keyword>port\ firmware</keyword>
+			<keyword>ppp\ aaa</keyword>
+			<keyword>ppp\ secret</keyword>
+			<keyword>queue\ interface</keyword>
+			<keyword>radius\ incoming</keyword>
+			<keyword>routing\ bfd\ interface</keyword>
+			<keyword>routing\ mme</keyword>
+			<keyword>routing\ rip</keyword>
+			<keyword>routing\ ripng</keyword>
+			<keyword>snmp</keyword>
+			<keyword>system\ clock</keyword>
+			<keyword>system\ clock\ manual</keyword>
+			<keyword>system\ console</keyword>
+			<keyword>system\ health</keyword>
+			<keyword>system\ identity</keyword>
+			<keyword>system\ logging</keyword>
+			<keyword>system\ note</keyword>
+			<keyword>system\ ntp\ client</keyword>
+			<keyword>system\ ntp\ server</keyword>
+			<keyword>system\ resource\ irq</keyword>
+			<keyword>system\ routerboard\ settings</keyword>
+			<keyword>system\ scheduler</keyword>
+			<keyword>system\ script</keyword>
+			<keyword>system\ upgrade\ mirror</keyword>
+			<keyword>system\ watchdog</keyword>
+			<keyword>tool\ bandwidth-server</keyword>
+			<keyword>tool\ e-mail</keyword>
+			<keyword>tool\ graphing</keyword>
+			<keyword>tool\ graphing\ interface</keyword>
+			<keyword>tool\ graphing\ queue</keyword>
+			<keyword>tool\ graphing\ resource</keyword>
+			<keyword>tool\ mac-server</keyword>
+			<keyword>tool\ mac-server\ mac-winbox</keyword>
+			<keyword>tool\ mac-server\ ping</keyword>
+			<keyword>tool\ sms</keyword>
+			<keyword>tool\ sniffer</keyword>
+			<keyword>tool\ traffic-generator</keyword>
+			<keyword>user\ aaa</keyword>
+		</context>
+	</definitions>
+</language>
