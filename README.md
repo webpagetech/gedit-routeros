@@ -4,12 +4,12 @@
 ### Installation:
 
 1. Get the src files
-  1. download the __gedit-routeros-master.zip__ file from Github
+  A. download the __gedit-routeros-master.zip__ file from Github
 2. Unzip the src files
-  1. unzip the file so that the zip file within it _(gedit-routeros.zip)_ is within your ~/Downloads Folder
+  A. unzip the file so that the zip file within it _(gedit-routeros.zip)_ is within your ~/Downloads Folder
     * `cd ~/Downloads && unzip gedit-routeros-master.zip`
 3. Open a __root__ terminal
-  1. open a terminal
+  A. open a terminal
     * `su root`
       * or
     * `sudo -s`
