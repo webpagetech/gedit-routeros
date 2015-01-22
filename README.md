@@ -4,13 +4,16 @@
 ### Installation:
 
 1. Get the src files
+
   a. download the __gedit-routeros-master.zip__ file from Github
 
 2. Unzip the src files
+
   a. unzip the file so that the zip file within it _(gedit-routeros.zip)_ is within your ~/Downloads Folder
     * `cd ~/Downloads && unzip gedit-routeros-master.zip`
 
 3. Open a __root__ terminal
+
   a. open a terminal
     * `su root`
       * or
@@ -19,8 +22,10 @@
 
 4. Copy __gedit-routeros.zip__ to Gedit's usr share folder
   * `cp ~/Downloads/gedit-routeros.zip /usr/share/gtksourceview-3.0/`
+
 5. cd to Gedit's usr share folder
   * `cd /usr/share/gtksourceview-3.0/`
+
 6. Move the .xml style file into Gedit's __styles/__  folder and move the .lang sytax file into Gedit's __language-specs/__ folder.
   * `unzip gedit-routeros.zip`
 
