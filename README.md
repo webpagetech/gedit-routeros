@@ -1,33 +1,38 @@
-# **gedit-routeros**
-Mikrotik RouterOS code syntax highlighting for .rsc Files
+# gedit-routeros
+##### Mikrotik RouterOS code syntax highlighting for .rsc Files
 
-### **Installation:**
+### Installation:
 
 1. Get the src files
-  * download the __gedit-routeros-master.zip__ file from github
+  1. download the __gedit-routeros-master.zip__ file from Github
 2. Unzip the src files
-  * unzip the file so that the zip file within it _(gedit-routeros.zip)_ is within your ~/Downloads Folder
-    * _cd ~/Downloads && unzip gedit-routeros-master.zip_
-3. Open a *root* terminal
-  * open a terminal
-  * _su root_  or  _sudo -s_  to gain root access
+  1. unzip the file so that the zip file within it _(gedit-routeros.zip)_ is within your ~/Downloads Folder
+    * `cd ~/Downloads && unzip gedit-routeros-master.zip`
+3. Open a __root__ terminal
+  1. open a terminal
+    * `su root`
+      * or
+    * `sudo -s`
+      * to gain root access
 4. Copy __gedit-routeros.zip__ to Gedit's usr share folder
-  * _cp ~/Downloads/gedit-routeros.zip /usr/share/gtksourceview-3.0/_
+  * `cp ~/Downloads/gedit-routeros.zip /usr/share/gtksourceview-3.0/`
 5. cd to Gedit's usr share folder
-  * cd /usr/share/gtksourceview-3.0/
+  * `cd /usr/share/gtksourceview-3.0/`
 6. Move the .xml style file into Gedit's __language-specs/__ folder and move the .lang sytax file into Gedit's __styles/__ folder.
-  * _unzip gedit-routeros.zip_
+  * `unzip gedit-routeros.zip`
 
 
-#### **Notes:**
+#### Notes:
 
-* That should insert the mikrotik.lang file into /usr/share/gtksourceview-3.0/language-specs/mikrotik.lang
+* That should insert the mikrotik.lang file into __/usr/share/gtksourceview-3.0/language-specs/mikrotik.lang__
 
-* It should also insert the routerosv6.xml file to /usr/share/gtksourceview-3.0/styles/routerosv6.xml
+* It should also insert the routerosv6.xml file to __/usr/share/gtksourceview-3.0/styles/routerosv6.xml__
 
-* Both files should have permissions: _root:root 644_
+* Both files should have permissions: __root:root 644__
 
-* You can manualy place these files in there folders rather than using the zip file _gedit-routeros.zip_
+* You can manualy place these files in there folders rather than using the zip file __gedit-routeros.zip__
+
+#### Usage:
 
 * open up gedit
 
