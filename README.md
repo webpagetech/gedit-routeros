@@ -18,7 +18,7 @@
   * `cp ~/Downloads/gedit-routeros.zip /usr/share/gtksourceview-3.0/`
 5. cd to Gedit's usr share folder
   * `cd /usr/share/gtksourceview-3.0/`
-6. Move the .xml style file into Gedit's __language-specs/__ folder and move the .lang sytax file into Gedit's __styles/__ folder.
+6. Move the .xml style file into Gedit's __styles/__  folder and move the .lang sytax file into Gedit's __language-specs/__ folder.
   * `unzip gedit-routeros.zip`
 
 
@@ -36,8 +36,8 @@
 
 * open up gedit
 
-* any files with the .rsc extention should have there syntax highlighing
+* any files with the .rsc extention should have RouterOS syntax highlighing
 
-* you can force syntax highlighing by going to __view->highlight Mode...__ and selecting __RouterOSv6__ for none .rsc files that you want RouterOS highlighting for.
+* you can force RouterOS syntax highlighing by going to __view->highlight Mode...__ and selecting __RouterOSv6__ for none .rsc files that you want RouterOS highlighting for.
 
-* you can also use the routerOS syle by going to __edit->preferances->fonts&colors__ and selecting __RouterOSv6__. 
+* you can also use the routerOS style by going to __edit->preferances->fonts&colors__ and selecting __RouterOSv6__. 
