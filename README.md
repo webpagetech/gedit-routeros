@@ -7,13 +7,12 @@
 ###### tested only in ubuntu 14.04
 
 1. Get the src files
-
-  a. download the __gedit-routeros-master.zip__ file from [GitHub](https://github.com/webpagetech/gedit-routeros/archive/master.zip)
-
+    * download the __gedit-routeros-master.zip__ file from [GitHub](https://github.com/webpagetech/gedit-routeros/archive/master.zip)
 2. Unzip the src files
-
-  a. unzip __gedit-routeros-master.zip__ so that the zip file within it _(gedit-routeros.zip)_ unpacks into your ~/Downloads Folder
+  * unzip __gedit-routeros-master.zip__ so that the zip file within it _(gedit-routeros.zip)_ unpacks into your ~/Downloads Folder
     * `cd ~/Downloads && unzip gedit-routeros-master.zip`
+3. Move the .xml style file into Gedit's __styles/__  folder and move the .lang sytax file into Gedit's __language-specs/__ folder.
+  * `sudo unzip ~/Downloads/gedit-routeros.zip -d /usr/share/gtksourceview-3.0/`
 
 <!--
 3. Open a __root__ terminal
@@ -32,9 +31,6 @@
 5. cd to Gedit's usr share folder
   * `cd /usr/share/gtksourceview-3.0/`
 -->
-
-3. Move the .xml style file into Gedit's __styles/__  folder and move the .lang sytax file into Gedit's __language-specs/__ folder.
-  * `sudo unzip ~/Downloads/gedit-routeros.zip -d /usr/share/gtksourceview-3.0/`
 
 
 #### Notes:
