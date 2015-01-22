@@ -1,8 +1,7 @@
 # gedit-routeros  [Web Page Tech](http://webpagetech.com)
 
-#### Mikrotik RouterOS code syntax highlighting for .rsc Files  ![Web Page Tech](https://avatars3.githubusercontent.com/u/10645972?v=3&s=200)
-
-_tested only in ubuntu 14.04_
+Mikrotik RouterOS code syntax highlighting for .rsc Files |  ![Web Page Tech](https://avatars3.githubusercontent.com/u/10645972?v=3&s=200)
+_tested only in ubuntu 14.04_ | [webpagetech.com](http://webpagetech.com)
 
 ### Installation:
 
