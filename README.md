@@ -1,8 +1,12 @@
-# gedit-routeros
+# gedit-routeros    ###### Patches and improvements welcome!
 
 Mikrotik RouterOS <br /> Syntax Highlighting <br /> For <br /> RouterOS .rsc Files | ![Web Page Tech](https://avatars3.githubusercontent.com/u/10645972?v=3&s=200)
 :---: | :---:
-Tested in: <br /> Ubuntu 12.04 <br /> Ubuntu 14.04 | [webpagetech - gedit-routeros](https://github.com/webpagetech/gedit-routeros)<br />[webpagetech.com](http://webpagetech.com)
+Tested in: <br /> Ubuntu 12.04 <br /> Ubuntu 14.04 | [Project Home Page](http://webpagetech.com/index.php/en/tutorials/mikrotik-tutorials/40-mikrotik-gedit)<br />[_github_ Home](https://github.com/webpagetech/gedit-routeros)
+
+### Easy Installation:
+
+Clone and execute the install.sh script.
 
 ### Installation:
 
@@ -18,12 +22,11 @@ Tested in: <br /> Ubuntu 12.04 <br /> Ubuntu 14.04 | [webpagetech - gedit-router
 
   * `cd ~/Downloads/gedit-routeros-master/ && ./install.sh`
 
-#### Notes:
+#### Note:
 
 * You can manualy place these files in there folders rather than using the __install.sh__ script
   * Insert the mikrotik.lang file into __~/.local/share/gtksourceview-3.0/language-specs/mikrotik.lang__
   * Insert the routerosv6.xml file to __~/.local/share/gtksourceview-3.0/styles/routerosv6.xml__
-* Both files should have permissions: __<user>:<user> 644__
 
 #### Usage:
 
