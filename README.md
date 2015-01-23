@@ -14,7 +14,7 @@ Tested in: <br /> Ubuntu 12.04 <br /> Ubuntu 14.04 | [webpagetech.com](http://we
 
     * `unzip ~/Downloads/gedit-routeros-master.zip -d ~/Downloads/`
 
-3. Move the .xml style file into the _gedit_ __styles/__  folder <br /> and <br /> move the .lang syntax file into _gedit_ __language-specs/__ folder.
+3. Move the .xml style file into the _gedit_ __styles/__  folder <br /> and <br /> move the .lang syntax file into the _gedit_ __language-specs/__ folder.
 
   * `sudo unzip ~/Downloads/gedit-routeros.zip -d /usr/share/gtksourceview-3.0/`
 
