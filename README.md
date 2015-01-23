@@ -2,12 +2,12 @@
 
 Mikrotik RouterOS <br /> Syntax Highlighting <br /> For <br /> RouterOS .rsc Files | ![Web Page Tech](https://avatars3.githubusercontent.com/u/10645972?v=3&s=200)
 :---: | :---:
-Tested in: <br /> ubuntu 14.04 <br /> Ubuntu 12.04 | [webpagetech.com](http://webpagetech.com)
+Tested in: <br /> Ubuntu 12.04 <br /> Ubuntu 14.04 | [webpagetech.com](http://webpagetech.com)
 
 ### Installation:
 
 1. Get the src files
-    * download the __gedit-routeros-master.zip__ file from [GitHub](https://github.com/webpagetech/gedit-routeros/archive/master.zip)
+    * Download the __gedit-routeros-master.zip__ file from [GitHub](https://github.com/webpagetech/gedit-routeros/archive/master.zip) <br />into your ~/Downloads Folder.
 
 2. Unzip the src files
   * unzip __gedit-routeros-master.zip__ so that the zip file within it _(gedit-routeros.zip)_ unpacks into your ~/Downloads Folder
