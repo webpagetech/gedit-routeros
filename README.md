@@ -10,13 +10,13 @@ Tested in: <br /> Ubuntu 12.04 <br /> Ubuntu 14.04 | [webpagetech.com](http://we
     * Download the __gedit-routeros-master.zip__ file from [GitHub](https://github.com/webpagetech/gedit-routeros/archive/master.zip) <br />into your ~/Downloads Folder.
 
 2. Unzip the src files
-  * unzip __gedit-routeros-master.zip__ so that the zip file within it _(gedit-routeros.zip)_ unpacks into your ~/Downloads Folder
+  * unzip __gedit-routeros-master.zip__ into your ~/Downloads Folder
 
     * `unzip ~/Downloads/gedit-routeros-master.zip -d ~/Downloads/`
 
 3. Move the .xml style file into the _gedit_ __styles/__  folder <br /> and <br /> move the .lang syntax file into the _gedit_ __language-specs/__ folder.
 
-  * `sudo unzip ~/Downloads/gedit-routeros.zip -d /usr/share/gtksourceview-3.0/`
+  * `sudo unzip ~/Downloads/gedit-routeros-master/gedit-routeros.zip -d /usr/share/gtksourceview-3.0/`
 
 #### Notes:
 
