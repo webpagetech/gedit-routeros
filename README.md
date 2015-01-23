@@ -1,8 +1,8 @@
 # gedit-routeros
 
-Mikrotik RouterOS <br /> Syntax Highlighting <br /> For <br /> RouterOS .rsc Files | ![Web Page Tech](https://avatars3.githubusercontent.com/u/10645972?v=3&s=200)
-:---: | :---:
-Tested in: <br /> Ubuntu 12.04 <br /> Ubuntu 14.04 | [Project Home Page](http://webpagetech.com/index.php/en/tutorials/mikrotik-tutorials/40-mikrotik-gedit)<br />[_github_ Home](https://github.com/webpagetech/gedit-routeros)
+Mikrotik RouterOS <br /> Syntax Highlighting <br /> For <br /> RouterOS .rsc Files | ![Web Page Tech](https://avatars3.githubusercontent.com/u/10645972?v=3&s=200) | ![gedit-routeros Screen Shot](http://webpagetech.com/media/rokgallery/d/d9e00da0-d0d6-4716-d769-e01d92e1f804/feb05266-0ab2-4c79-af4b-c044863dfdd1.png)
+:---: | :---: | :---:
+Tested in: <br /> Ubuntu 12.04 <br /> Ubuntu 14.04 | [Project Home Page](http://webpagetech.com/index.php/en/tutorials/mikrotik-tutorials/40-mikrotik-gedit)<br />[_github_ Home](https://github.com/webpagetech/gedit-routeros) | [Web Page Tech](http://webpagetech.com)
 
 ### Easy Installation:
 
