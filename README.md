@@ -1,4 +1,4 @@
-# gedit-routeros    ###### Patches and improvements welcome!
+# gedit-routeros
 
 Mikrotik RouterOS <br /> Syntax Highlighting <br /> For <br /> RouterOS .rsc Files | ![Web Page Tech](https://avatars3.githubusercontent.com/u/10645972?v=3&s=200)
 :---: | :---:
@@ -27,6 +27,7 @@ Clone and execute the install.sh script.
 * You can manualy place these files in there folders rather than using the __install.sh__ script
   * Insert the mikrotik.lang file into __~/.local/share/gtksourceview-3.0/language-specs/mikrotik.lang__
   * Insert the routerosv6.xml file to __~/.local/share/gtksourceview-3.0/styles/routerosv6.xml__
+* Patches and improvements welcome!
 
 #### Usage:
 
