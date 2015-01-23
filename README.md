@@ -1,8 +1,8 @@
 # gedit-routeros
 
-Mikrotik RouterOS syntax highlighting | ![Web Page Tech](https://avatars3.githubusercontent.com/u/10645972?v=3&s=200)
+Mikrotik RouterOS Syntax Highlighting | ![Web Page Tech](https://avatars3.githubusercontent.com/u/10645972?v=3&s=200)
 :---: | :---:
-tested only in ubuntu 14.04 | [webpagetech.com](http://webpagetech.com)
+Tested __only__ in ubuntu 14.04 | [webpagetech.com](http://webpagetech.com)
 
 ### Installation:
 
