@@ -14,7 +14,7 @@ Tested in: <br /> Ubuntu 12.04 <br /> Ubuntu 14.04 | [webpagetech.com](http://we
 
     * `unzip ~/Downloads/gedit-routeros-master.zip -d ~/Downloads/`
 
-3. Move the .xml style file into Gedit's __styles/__  folder <br /> and <br /> move the .lang sytax file into Gedit's __language-specs/__ folder.
+3. Move the .xml style file into the _gedit_ __styles/__  folder <br /> and <br /> move the .lang syntax file into _gedit_ __language-specs/__ folder.
 
   * `sudo unzip ~/Downloads/gedit-routeros.zip -d /usr/share/gtksourceview-3.0/`
 
@@ -27,7 +27,7 @@ Tested in: <br /> Ubuntu 12.04 <br /> Ubuntu 14.04 | [webpagetech.com](http://we
 
 #### Usage:
 
-* Open up __Gedit__
+* Open up _gedit_
 * Any files with the __.rsc__ extention should have RouterOS syntax highlighing
 * You can force RouterOS syntax highlighing by going to __view->highlight Mode...__ and selecting __RouterOSv6__ for _none .rsc_ files that you want RouterOS highlighting for.
 * You can also use the RouterOS style by going to __edit->preferances->fonts&colors__ and selecting __RouterOSv6__. 
