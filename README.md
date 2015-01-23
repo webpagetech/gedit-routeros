@@ -2,7 +2,7 @@
 
 Mikrotik RouterOS <br /> Syntax Highlighting <br /> For <br /> RouterOS .rsc Files | ![Web Page Tech](https://avatars3.githubusercontent.com/u/10645972?v=3&s=200)
 :---: | :---:
-Tested in: <br /> Ubuntu 12.04 <br /> Ubuntu 14.04 | [webpagetech.com](http://webpagetech.com)
+Tested in: <br /> Ubuntu 12.04 <br /> Ubuntu 14.04 | [webpagetech - gedit-routeros](https://github.com/webpagetech/gedit-routeros)<br />[webpagetech.com](http://webpagetech.com)
 
 ### Installation:
 
@@ -16,14 +16,14 @@ Tested in: <br /> Ubuntu 12.04 <br /> Ubuntu 14.04 | [webpagetech.com](http://we
 
 3. Move the .xml style file into the _gedit_ __styles/__  folder <br /> and <br /> move the .lang syntax file into the _gedit_ __language-specs/__ folder.
 
-  * `sudo unzip ~/Downloads/gedit-routeros-master/gedit-routeros.zip -d /usr/share/gtksourceview-3.0/`
+  * `cd ~/Downloads/gedit-routeros-master/ && ./install.sh`
 
 #### Notes:
 
-* That should insert the mikrotik.lang file into __/usr/share/gtksourceview-3.0/language-specs/mikrotik.lang__
-* It should also insert the routerosv6.xml file to __/usr/share/gtksourceview-3.0/styles/routerosv6.xml__
-* Both files should have permissions: __root:root 644__
-* You can manualy place these files in there folders rather than using the zip file __gedit-routeros.zip__
+* You can manualy place these files in there folders rather than using the __install.sh__ script
+  * Insert the mikrotik.lang file into __~/.local/share/gtksourceview-3.0/language-specs/mikrotik.lang__
+  * Insert the routerosv6.xml file to __~/.local/share/gtksourceview-3.0/styles/routerosv6.xml__
+* Both files should have permissions: __<user>:<user> 644__
 
 #### Usage:
 
