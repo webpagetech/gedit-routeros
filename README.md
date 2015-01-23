@@ -11,7 +11,7 @@ Tested __only__ in ubuntu 14.04 | [webpagetech.com](http://webpagetech.com)
 2. Unzip the src files
   * unzip __gedit-routeros-master.zip__ so that the zip file within it _(gedit-routeros.zip)_ unpacks into your ~/Downloads Folder
     * `unzip ~/Downloads/gedit-routeros-master.zip -d ~/Downloads/`
-3. Move the .xml style file into Gedit's __styles/__  folder and move the .lang sytax file into Gedit's __language-specs/__ folder.
+3. Move the .xml style file into Gedit's __styles/__  folder <br /> and <br /> move the .lang sytax file into Gedit's __language-specs/__ folder.
   * `sudo unzip ~/Downloads/gedit-routeros.zip -d /usr/share/gtksourceview-3.0/`
 
 #### Notes:
