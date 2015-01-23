@@ -27,7 +27,7 @@ Tested in: <br /> Ubuntu 12.04 <br /> Ubuntu 14.04 | [webpagetech.com](http://we
 
 #### Usage:
 
-* open up gedit
-* any files with the .rsc extention should have RouterOS syntax highlighing
-* you can force RouterOS syntax highlighing by going to __view->highlight Mode...__ and selecting __RouterOSv6__ for none .rsc files that you want RouterOS highlighting for.
-* you can also use the routerOS style by going to __edit->preferances->fonts&colors__ and selecting __RouterOSv6__. 
+* Open up gedit
+* Any files with the .rsc extention should have RouterOS syntax highlighing
+* You can force RouterOS syntax highlighing by going to __view->highlight Mode...__ and selecting __RouterOSv6__ for none .rsc files that you want RouterOS highlighting for.
+* You can also use the routerOS style by going to __edit->preferances->fonts&colors__ and selecting __RouterOSv6__. 
