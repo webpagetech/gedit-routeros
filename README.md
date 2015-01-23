@@ -2,7 +2,7 @@
 
 Mikrotik RouterOS <br /> Syntax Highlighting <br /> For <br /> RouterOS .rsc Files | ![Web Page Tech](https://avatars3.githubusercontent.com/u/10645972?v=3&s=200)
 :---: | :---:
-Tested __only__ in ubuntu 14.04 | [webpagetech.com](http://webpagetech.com)
+Tested in: <br /> ubuntu 14.04 <br /> Ubuntu 12.04 | [webpagetech.com](http://webpagetech.com)
 
 ### Installation:
 
